@@ -1,0 +1,135 @@
+/*------------------------------------------------------------------
+
+Template:	JB Epicure
+
+Version:	Joomla 1.5
+
+Zen Grid: 	v2.0
+
+Copyright:	Joomlabamboo
+
+Created:	February 2012
+
+---------------------------------------------------*/
+
+
+
+a,.sidebar ul li.active li.active a,#nav ul li li:hover,a:hover,#nav ul li li:hover,#nav .active #current > a,#nav .active .active > a,#nav ul li li a:hover,#nav ul li.active li a:hover,#nav ul li.active li.active a:hover, #nav ul li.active li.active li.active a
+
+{ color: #74856E; }
+
+
+
+/* First Background Hovers
+
+---------------------------------------------------*/
+
+#socialicons a:hover,div.k2CommentsForm form input#submitCommentButton,ul.jbtabs li a:hover,#subnav ul li.active a,.sidebar ul li.active a,#jbSplitMenuAbove ul li#current a,a.jbReadon,span.featured,a.k2ReadMore,form#form-login input.button,button, input[type="reset"], input[type="button"], input[type="submit"],ul.jbtabs li.active a,ul#filters li a.active
+
+{ background: #74856E !important; }
+
+
+
+
+
+.zenmore a,
+
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+
+	background: #74856E; /*non-CSS3 browsers will use this*/
+
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#74856E) to(#5E6C59)); /*old webkit*/
+
+	background: -webkit-linear-gradient(#74856E, #5E6C59); /*new webkit*/
+
+	background: -moz-linear-gradient(#74856E, #5E6C59); /*gecko*/
+
+	background: -ms-linear-gradient(#74856E, #5E6C59); /*IE10 preview*/
+
+	background: -o-linear-gradient(#74856E, #5E6C59); /*opera 11.10+*/
+
+	background: linear-gradient(#74856E, #5E6C59); /*CSS3 browsers*/
+
+	-pie-background: linear-gradient(#74856E, #5E6C59); /*PIE*/
+
+	color: #FFFFFF !important;
+
+}
+
+
+
+/* Second Background Hovers
+
+---------------------------------------------------*/
+
+div.k2CommentsForm form input#submitCommentButton:hover,a.jbReadon:hover,a.k2ReadMore:hover,.zenmore a:hover,form#form-login input.button:hover,button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover  
+
+{ background: #5E6C59 !important; color: #fff; }
+
+
+
+/* Slideshow disc colours
+
+---------------------------------------------------*/
+
+.slidenavdiscs ul li 
+
+{ background: url(../images/slideshow/slideshowDeepGreen.png) 0 0 no-repeat !important; }
+
+
+
+/* Resets on items that have a #ff colout
+
+---------------------------------------------------*/
+
+ul.jbtabs li.active a:hover,#jbSplitMenuAbove ul li#current a,a#zenpanelopen,div.jbReadmore a,ul.jbtabs li a:hover,#subnav ul li.active a,.sidebar ul li.active a,#jbSplitMenuAbove ul li#current a,a.jbReadon,span.featured,a.k2ReadMore,#subnav ul li.active a,a.k2ReadMore:hover,.mbLeftCol .mbMaxbizDate,#banner .zenmore a:hover,#nav ul li a:hover,div.k2CommentsForm form input#submitCommentButton
+
+{ color: #fff; }
+
+
+
+
+
+.sidebar ul li a 
+
+{ color: #999; }
+
+
+
+/* Nav link and span color
+
+---------------------------------------------------*/
+
+#nav ul li a,#nav span.separator,#nav ul li span.mainlevel span,#nav ul li.active li a,#nav ul li.active li span.separator,#nav ul li.active li.active li a,#nav ul li.active li.active li.active li a,.moduletable-superfish  ul li a, .moduletable-superfish span.seaparator,.moduletable-superfish ul li.active li a,.moduletable-superfish ul li.active li span.separator,.moduletable-superfish  ul li.active li.active li a,.moduletable-superfish ul li.active li.active li.active li a
+
+{ color: #fff; }
+
+ 
+
+/* Nav Active and hover color
+
+---------------------------------------------------*/
+
+#nav ul > li.active > a,#nav ul > li > a:hover,.moduletable-superfish ul > li.active > a,.moduletable-superfish ul > li > a:hover,#search .moduletable input 
+
+{ border-color: #659294; }
+
+
+
+/* Borders on Superfish
+
+---------------------------------------------------*/
+
+#nav ul li li,.moduletable-superfish ul li li 
+
+{ border-bottom-color: #222; border-top-color: #444; }
+
+
+
+/* Colours for background hover states
+
+---------------------------------------------------*/
+
+#nav ul li:hover, #nav ul li.sfHover,#nav ul a:focus, #nav ul a:hover,#nav ul a:active,#nav ul li li.active,.moduletable-superfish ul li:hover, .moduletable-superfish ul li.sfHover,.modueltable-superfish ul a:focus, .moduletable-superfish ul a:hover,.moduletable-superfish ul a:active,.modueltable-superfish  ul li li.active
+
+{ outline: 0; color: #ccc; }

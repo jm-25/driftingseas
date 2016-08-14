@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------
+Template:	JB Epicure
+Version:	Joomla 1.5
+Zen Grid: 	v2.0
+Copyright:	Joomlabamboo
+Created:	October 2011
+---------------------------------------------------*/
+
+
+/* Main Background colour
+---------------------------------------------------*/
+body,#zenpanel {background:#fafafa url(../images/bg/black.png);color: #777}  
+
+
+#navwrap.sticky {
+border-bottom: 1px solid #454545;z-index: 12;
+}
+
+/* Main Content Background
+---------------------------------------------------*/
+.container
+{
+	background:url(../images/bg/cross-lines-white.png);
+}
+
+
+/* Banner, grid6 row and breacrumb texture 
+---------------------------------------------------*/
+#bannerwrap .row,#grid6wrap .container,#breadcrumbrow .container
+{
+	background:url(../images/bg/classy_fabric.jpg)
+}
+
+
+
+/* Footer and top texture
+---------------------------------------------------*/
+#footerwrap,#topwrap,#bottomrow,#navwrap.sticky
+{
+	background:url(../images/bg/blackfooter.png)
+}
+
+
+/* Border colour to match the background
+---------------------------------------------------*/
+#nav ul li.active > a,
+#nav ul li > a:hover,
+.moduletable-superfish ul > li.active > a,
+.moduletable-superfish ul > li > a:hover,
+#search .moduletable input,
+#nav ul li.sfHover > a,#nav ul li:hover > a,#nav ul li.active > a,#nav ul li.active > a.sf-with-ul,#nav ul li a.sf-with-ul:hover,ul.jbtabs li a,#nav span.mainlevel span:hover,#nav li.active span.mainlevel span,#nav li.active > span.separator
+{
+border-color:#555;
+}
+
+
+
+/* Image for Parent Items
+---------------------------------------------------*/
+#nav a.sf-with-ul,
+#nav a.sf-with-ul:hover,
+#nav ul li a.mainlevel.sf-with-ul,
+#nav ul.sf-js-enabled li span.mainlevel span,
+#nav li.parent li.parent span.separator,
+#nav ul span.separator,
+.moduletable-superfish ul span.separator,
+.moduletable-superfish a.sf-with-ul,
+.moduletable-superfish a.sf-with-ul:hover,
+.moduletable-superfish li.parent span.separator,
+.moduletable-superfish li.parent li.parent span.separator  {
+	background: url(../images/menu/navParent.png) no-repeat 8px center;padding-left: 20px;
+}
+
+
+
+
+/* Image for Sub Parent Items
+---------------------------------------------------*/
+#nav ul ul a.sf-with-ul,
+#nav ul ul a.sf-with-ul:hover,
+#nav ul li li a.mainlevel.sf-with-ul,
+#nav ul.sf-js-enabled li li span.mainlevel span,
+#nav ul li li span.mainlevel span,
+#nav ul ul span.separator,
+.moduletable-superfish ul ul a.sf-with-ul,
+.moduletable-superfish ul ul a.sf-with-ul:hover,
+.moduletable-superfish ul ul li.parent span.separator,
+.moduletable-superfish ul ul li li.parent span.separator,
+.moduletable-superfish ul li li span.mainlevel span
+{background:	url(../images/menu/navParent.png) no-repeat 96% center;  padding-left:10px;text-indent: 0;}

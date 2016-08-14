@@ -1,0 +1,371 @@
+/*------------------------------------------------------------------
+
+Template:	JB Epicure
+
+Version:	Joomla 1.5
+
+Zen Grid: 	v2.0
+
+Copyright:	Joomlabamboo
+
+Created:	February 2012
+
+------------------------------------------------------------------*/
+
+ 
+
+/* Rules for Media queries. If you want to create your own media query file just create a file called mediaqueroes.css in your css file.
+
+-----------------------------------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.container{width: 740px !important} 
+
+	#navwrap .grid_eight {width: 100% !important;}
+
+	#navwrap {padding: 0;}
+
+	#search {margin: -135px 120px 0 100px;}
+
+	.sidebar  .jbmoduleBody {float: left;width: 80%;margin-bottom: 60px;}
+
+	#grid1wrap .jbmoduleBody { width: 94%; }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.container{width: 520px !important} 
+
+	#search {margin: 10px  !important;}
+
+	#search input {width:420px !important;margin-left: 10px !important;}
+
+	#grid1wrap .jbmoduleBody { width: 91%; }
+	
+	.zentools .grid_six.element ( width:97%; }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	
+
+	.sidebar  .jbmoduleBody { float: left; width: 91%; margin-bottom: 60px; }
+
+	/* Fix for advert positions with three modules published at low resolutions */
+
+	#abovemain .grid_3,
+
+	#abovemain .grid_4,
+
+	#belowmain .grid_3,
+
+	#belowmain .grid_4 {
+
+		width: 100%;
+
+	}	
+
+	#nav ul li {
+
+font-size:1em;margin-right: 4px !important;
+
+}
+
+		
+
+	#zenpanel {width: 90% !important;}
+
+	
+
+	/* Makes all grid positions 100% in width on small browsers */
+
+	.grid_one,
+
+	.grid_two,
+
+	.grid_three,
+
+	.grid_four,
+
+	.grid_five,
+
+	.grid_six,
+
+	.grid_seven,
+
+	.grid_eight,
+
+	.grid_nine,
+
+	.grid_ten,
+
+	.grid_eleven,
+
+	.grid_twelve,
+
+	.grid_1,
+
+	.grid_2,
+
+	.grid_3,
+
+	.grid_4
+
+	{width: 100%;margin-bottom: 30px}
+
+	
+
+	#banner .grid_one,
+
+	#banner .grid_two,
+
+	#banner .grid_three,
+
+	#banner .grid_four,
+
+	#banner .grid_five,
+
+	#banner .grid_six,
+
+	#banner .grid_seven,
+
+	#banner .grid_eight,
+
+	#banner .grid_nine,
+
+	#banner .grid_ten,
+
+	#banner .grid_eleven,
+
+	#banner .grid_twelve,
+
+	#topwrap .grid_one,
+
+	#topwrap .grid_two,
+
+	#topwrap .grid_three,
+
+	#topwrap .grid_four,
+
+	#topwrap .grid_five,
+
+	#topwrap .grid_six,
+
+	#topwrap .grid_seven,
+
+	#topwrap .grid_eight,
+
+	#topwrap .grid_nine,
+
+	#topwrap .grid_ten,
+
+	#topwrap .grid_eleven,
+
+	#topwrap .grid_twelve{
+
+margin: 0;
+
+}
+
+	
+
+	/* Masonry */
+
+	.zentools.masonry .grid_1,.zentools.masonry .grid_2,.zentools.masonry .grid_3,.zentools.masonry .grid_4 {
+
+width: 100% !important; margin:0;
+
+}
+
+	
+
+	.features {height: auto;float: left;width: 100%;margin:15px 0;background: url(../images/bevel.png) repeat-x left bottom;padding: 0 0 15px;} 	
+
+	
+
+	#logo {text-align: center;}
+
+	#logowrap .container {padding-top: 20px;}
+
+	#navwrap .row {}
+
+	
+
+	#search {margin: 40px 0 0}
+
+	#search input {width:440px}
+
+	
+
+	#bottomrow .container {
+
+padding-bottom: 0;
+
+}
+
+	#bottom .moduletable,#bottom .moduletable_menu {background: url(../images/blackbevel.png) repeat-x left bottom;padding-bottom: 15px;}
+
+	#bottom .zenlast .moduletable,#bottom .zenlast .moduletable_menu {
+
+margin: 0;background: none;padding: 0;
+
+}
+
+
+
+	
+
+}
+
+
+
+/* Fix for tabs dropping onto two lines on small screens */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+		ul.jbtabs li a,ul.jbtabs li.active a {padding: 12px 20px;font-size: 0.9em;line-height: 1.9em;}
+
+			#bannerwrap .container {
+
+padding-bottom: 0;
+
+}
+
+}
+
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 520px) {
+
+	
+
+	.sidebar  .jbmoduleBody { float: left; width: 88%; margin-bottom: 60px; }
+
+	#grid1wrap .jbmoduleBody { width: 90%; }
+	
+	
+
+	/* CSS for the mobile menu */
+
+	#mobilemenu {display: block;padding: 15px 0 10px;width: 100%;}
+
+	#mobilemenu select {width: 70% !important;margin: 0 auto;display: block;}
+
+	.fullwrap.togglemenu #menuwrap,.fullwrap.selectmenu #menuwrap,.fullwrap.togglemenu 	#mobilemenu  {display: none;}
+	
+	/* Togglemenu */
+	#togglemenu {display: block;padding: 10px 0 0 10px;}
+	.fullwrap.togglemenu #navwrap .inner,
+	.fullwrap.togglemenu #navwrap .row,
+	.fullwrap.togglemenu #navwrap .container {border: 0;padding: 0;}
+
+
+
+	/* Special module class to hide some modules on small browsers */
+
+	.moduletable.mobilehide{display: none;}
+
+	
+
+	/* Resets the push and pull for source ordered content */
+
+	.onecols_pull,
+
+	.twocols_pull,
+
+	.threecols_pull,
+
+	.fourcols_pull,
+
+	.fivecols_pull,
+
+	.sixcols_pull,
+
+	.sevencols_pull,
+
+	.eightcols_pull,
+
+	.ninecols_pull,
+
+	.tencols_pull,
+
+	.elevencols_pull,
+
+	.twelvecols_pull,
+
+	.onecols_push,
+
+	.twocols_push,
+
+	.threecols_push,
+
+	.fourcols_push,
+
+	.fivecols_push,
+
+	.sixcols_push,
+
+	.sevencols_push,
+
+	.eightcols_push,
+
+	.ninecols_push,
+
+	.tencols_push,
+
+	.elevencols_push,
+
+	.twelvecols_push
+
+	{left: 0;}
+
+	
+
+	
+
+	#footer img {text-align: center;float: left;}
+
+	.container{width: 98%  !important}	
+
+	#tabwrap .container {padding: 0;}
+
+	#nav ul li a {padding-left: 0;padding-right: 0;}
+
+	ul.jbtabs {border: 0;height: auto;}
+
+	ul.jbtabs li {float: none;list-style-type: none;margin: 0;}
+
+	ul.jbtabs li a {color: #999;padding: 12px 0px;border: 0;border-bottom: 1px solid #ddd;padding: 4px;display: block;}
+
+	ul.jbtabs li a:hover {border-bottom: 1px solid #ddd;border-width: 0 0 1px 0;}
+
+	ul.jbtabs li.active a {border-width: 0 0 1px 0;background: #eee;margin: 0;border-bottom: 1px solid #ddd;padding: 4px 0}
+
+	#zenpanel {width: 90% !important;height: auto !important;}
+
+	a#zenpanelopen {margin-top: -10px;margin-right: -5px;padding-top: 12px;}
+
+	
+
+	#bannerwrap .container {padding: 0;}
+
+	#nav {margin-bottom: 0;}
+
+	.jb_left45,.jb_right45 {
+
+width: 100% !important;margin: 0 !important;border: 0 !important;padding: 0 !important;
+
+}
+
+}

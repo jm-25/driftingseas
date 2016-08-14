@@ -1,0 +1,31 @@
+/**
+ * @package		Joomla Bamboo Zen Grid Framework
+ * @Type        Core CSS
+ * @version		v2.0
+ * @author		Joomlabamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+ 
+/* jbtabbed Area
+---------------------------------------------------*/
+#jbtabbedArea {}
+ ul.jbtabs {clear: both;float: left;width: 100%;}
+.jbtab_container {clear: both;}
+ul.jbtabs li {float: left;list-style-type: none;margin: 0 20px 0 0;padding: 0 20px 0px 0}
+ul.jbtabs li a {}
+ul.jbtabs li.active {}
+ul.jbtabs li a:hover {}
+ul.jbtabs li.active a:hover {}
+
+.jbtabwidth1 {float: left;width: 100%;}
+
+.jbtabwidth2 .moduletable 
+{float: left;width: 48%;margin-right: 2%;}
+
+.jbtabwidth3 .moduletable 
+{float: left;width:31%;margin-right: 2%;}
+
+
+.jbtabwidth4 .moduletable 
+ {float: left;width: 23%;margin-right: 2%;}

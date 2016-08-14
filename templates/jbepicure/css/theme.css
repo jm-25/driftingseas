@@ -1,0 +1,1760 @@
+/*------------------------------------------------------------------
+Template:	JB Epicure
+Version:	Joomla 1.5
+Zen Grid: 	v2.0
+Copyright:	Joomlabamboo
+Created:	February 2012
+---------------------------------------------------
+ Body and Outer Wrapper
+-----------------------------------------------------------------------------*/
+
+.fullWrap {
+margin-top:20px
+}
+
+
+
+.container {
+clear:both;
+padding:30px 0 0
+}
+
+
+
+#headerwrap .container,#logowrap .container,#navwrap .container,#topwrap .container,#bannerwrap .container,#footerwrap .container,#bottomrow .container,.zentools.accordion .allitems.container {
+background:none
+}
+
+
+/* Shadow rules
+-----------------------------------------------------------------------------*/
+
+#bannerwrap .row {
+-webkit-box-shadow:0 0 3px 0 #444;
+-moz-box-shadow:0 0 3px 0 #444;
+box-shadow:0 0 3px 0 #444;
+-pie-box-shadow:0 0 3px 0 #444;
+overflow:visible;
+float:left;
+width:100%;
+-webkit-border-top-left-radius:3px;
+-webkit-border-top-right-radius:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-topright:3px;
+border-radius:3px 3px 0 0
+}
+
+
+
+#grid1wrap .container,#grid2wrap .container,#grid3wrap .container,#grid4wrap .container,#grid5wrap .container,#grid6wrap .container {
+margin-top:-1px;
+padding-bottom: 30px;
+}
+
+#grid1wrap,#grid2wrap,#grid3wrap,#grid4wrap,#grid5wrap,#grid6wrap {
+margin-top:-1px
+}
+
+#jbArticle,.jbCategory,.jbSection,.contentdescription,.moduletable-panelmenu .jbmoduleBody,.sidebar .jbmoduleBody,#searchpage,#grid1 .jbmoduleBody,#k2Container.itemView,.k2AuthorBlock,.k2Related,.k2Navigation,#k2Container .catItemView,#k2Links,.k2ItemView,#k2Container .userBlock,#k2Container .latestItemsUser,#k2Container .latestItemView,.k2CommentsList li,ul.pagination,.k2CommentsForm,#k2Container .tagItemView,.latestItemsCategory,.k2TagView,.profile-main li,.profile-head,.profile-body ul.post-list li,.jbFrontPage {
+border:1px solid #ddd;
+border-radius:8px;
+background:#fff;
+-webkit-box-shadow: inset 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+box-shadow: inset 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+-pie-box-shadow:0 0 3px -1px #999;
+padding:20px 20px 40px
+}
+
+.contentpaneopen_edit a {
+margin-right:20px
+}
+
+
+/* Top Row - For top1 to top4 positions
+-----------------------------------------------------------------------------*/
+
+#topwrap {
+border-bottom:1px solid #454545;
+padding:8px 0
+}
+
+
+
+#topwrap .row {
+width:100%
+}
+
+#topwrap .container {
+font-size:90%;
+padding:0
+}
+
+#top4 ul {
+float:right
+}
+
+#topwrap ul {
+margin:0
+}
+
+#topwrap ul li {
+list-style:none;
+float:left;
+margin:0 10px
+}
+
+#topwrap a {
+color:#fff
+}
+
+/* Header and Logo Row - For when logo is in the header row and for header1 to header4 positions
+-----------------------------------------------------------------------------*/
+
+#headerwrap .row {
+padding:10px
+}
+
+#headerwrap h2 {
+margin:0
+}
+
+#headerwrap .moduletable h3,
+#headerwrap .moduletable h3 span {
+	background: transparent none;
+}
+
+
+/* Logo Div and Tagline
+-----------------------------------------------------------------------------*/
+
+#logowrap .row {
+width:100%
+}
+
+#logowrap .container {
+padding:20px 0 10px
+}
+
+#logo {
+margin:20px auto;
+padding-left:10px;
+}
+
+#logo h2 {
+margin:0
+}
+
+#logo a {
+color:#fff;
+text-shadow:0 2px 3px #555;
+opacity:1;
+}
+
+#logo a:hover {
+background:none;
+border:0
+}
+
+#tagline span {
+font-style:italic;
+color:#fff;
+position:relative;
+z-index:1
+}
+
+
+/* Nav row - for the menu position. See below for superfish styling
+-----------------------------------------------------------------------------*/
+#navwrap {
+padding-bottom:0;
+position:relative;
+z-index:2
+}
+#navwrap .inner {
+float:left;
+width:100%;
+padding:5px 0
+}
+
+#navwrap .row {
+overflow:visible;
+width:100%;
+padding:0
+}
+
+#navwrap .container {
+padding:0
+}
+
+#nav {
+margin:6px 0 25px
+}
+
+#nav ul li {
+font-size:1.2em;
+margin-right:10px !important
+}
+
+#nav.right {
+float: right;
+} 
+
+#nav.centert{
+float: none;margin: 0 auto;
+}
+
+
+/* Sticky Nav
+-----------------------------------------------------------------------------*/
+#navwrap.sticky #nav {
+margin: 0;padding-top: 4px;
+}
+
+/* Body Menus
+-----------------------------------------------------------------------------*/
+ul.horzmenu {text-align:center;font-family:droid sans;font-size:1em;}
+ul.horzmenu li {display:inline;margin-right:15px;padding-right:15px;border-right:1px solid #ccc;list-style:none}
+ul.horzmenu li.item-188 {padding-left:15px;border-left:1px solid #ccc;}
+.horzmenu .jbmoduleBody {padding-bottom:0px !important;}
+
+
+/* Reset the border on sub level active items
+-----------------------------------------------------------------------------*/
+
+#nav ul > li li.active > a,#nav ul > li li > a:hover,.moduletable-superfish ul > li li.active > a,.moduletable-superfish ul > li li > a:hover {
+border:0
+}
+
+#nav ul li li {
+font-size:0.8em
+}
+
+#nav ul li li li {
+font-size:1em
+}
+
+#nav.centered li li {
+text-indent:10px;
+padding:8px 0
+}
+
+#nav ul li:hover ul,.moduletable-superfish ul li:hover ul,#nav ul li.sfHover ul,.moduletable-superfish ul li.sfHover ul {
+top:40px
+}
+
+#nav ul li.sfHover > a,
+#nav ul li:hover > a,
+#nav ul li.active > a,
+#nav ul li.active > a.sf-with-ul,
+#nav ul li a.sf-with-ul:hover,
+#nav span.mainlevel span:hover,
+#nav li.active span.mainlevel span,
+#nav li.active > span.separator,
+#nav li:hover > span.separator {
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+-webkit-box-shadow:inset 0 2px 1px 1px rgba(0, 0, 0, .2);
+-moz-box-shadow:inset 0 2px 1px 1px rgba(0, 0, 0, .2);
+box-shadow:inset 0 2px 1px 1px rgba(0, 0, 0, .2);
+border-bottom:1px solid;
+padding:10px 14px 8px;
+}
+
+#nav ul li.sfHover > a.sf-with-ul,
+#nav ul li:hover > a.sf-with-ul,
+#nav ul li.active > a.sf-with-ul,
+#nav ul li a.sf-with-ul:hover,
+#nav li.active span.mainlevel span,
+#nav li.active > span.separator,
+#nav li:hover > span.separator {
+padding:10px 14px 8px 20px;	
+}
+
+#nav ul li li > a.sf-with-ul,
+#nav ul li li.sfHover > a.sf-with-ul,
+#nav ul li.sfHover li a,
+#nav ul li:hover li a,
+#nav ul li.active li a,
+#nav ul li.active li a.sf-with-ul,
+#nav ul li li a.sf-with-ul,
+#nav ul li li a.sf-with-ul:hover {
+border-radius:0;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+padding:10px 8px
+}
+
+#nav ul li.sfHover li > a,#nav ul li li:hover > a,#nav ul li.active li > a,#nav ul li.active li > a.sf-with-ul,#nav ul li li a.sf-with-ul:hover,ul.jbtabs li li a,#nav li li.active span.mainlevel span,#nav li li.active > span.separator {
+border-bottom:0 none
+}
+
+#nav li.parent span.separator, .moduletable-superfish li.parent span.separator {
+    padding-right: 14px;
+}
+
+/* Reset the colours for the menu
+---------------------------------------------------*/
+
+#nav ul li a,#nav span.separator,#nav ul li span.mainlevel span,#nav ul li.active li a,#nav ul li.active li span.separator,#nav ul li.active li.active li a,#nav ul li.active li.active li.active li a,.moduletable-superfish ul li a,.moduletable-superfish span.seaparator,.moduletable-superfish ul li.active li a,.moduletable-superfish ul li.active li span.separator,.moduletable-superfish ul li.active li.active li a,.moduletable-superfish ul li.active li.active li.active li a {
+color:#fff
+}
+
+
+/* Colours for sub level item backgrounds
+---------------------------------------------------*/
+
+#nav ul ul,.moduletable-superfish {
+-moz-box-shadow:0 0 4px #333;
+-webkit-box-shadow:0 0 4px #333;
+box-shadow:0 0 4px #333;
+background:#333 !important;
+border-top:0;
+margin-left:-10px
+}
+
+#nav ul > li li.active > a, #nav ul > li li > a:hover, .moduletable-superfish ul > li li.active > a, .moduletable-superfish ul > li li > a:hover { border: 0; }
+#nav ul li li, .moduletable-superfish ul li li { border-bottom-style: solid; border-bottom-width: 1px; border-top-style: solid; border-top-width: 1px; }
+#nav ul li li:first-child, .moduletable-superfish ul li li:first-child { border-top: 0; }
+#nav ul li li:last-child, .moduletable-superfish ul li li:last-child { border-bottom: 0; }
+#nav ul li li a:hover { border-bottom: 0; }
+
+
+/* Banner Row - For the banner position
+-----------------------------------------------------------------------------*/
+
+#bannerwrap {
+color:#fff;
+z-index:0;
+position:relative
+}
+
+
+#bannerwrap .container {
+overflow:visible
+}
+
+#banner {
+width:94% !important;
+float:left;
+padding:30px 3% 0
+}
+
+
+#banner .zenimage {
+padding-right:47px;
+margin-top:-54px
+}
+
+@media all and (orientation) {
+/* One pixel difference on firefox - this corrects that */  
+#banner .zenimage {
+background-position: right top;
+}
+}
+
+
+#banner .zenimage img {
+margin-left:0;
+background:#fff;
+width:96%;
+-webkit-box-shadow:1px 1px 1px 2px rgba(1, 1, 0, .1);
+-moz-box-shadow:1px 1px 1px 2px rgba(1, 1, 0, .1);
+box-shadow:1px 1px 1px 2px rgba(1, 1, 0, .1);
+padding:2%
+}
+
+#banner h2 {
+color:#fff;
+font-size:3em
+}
+
+#banner p {
+line-height: 2;
+}
+
+/* Tabbed Module - Bottom1 to bottom4 modules
+-----------------------------------------------------------------------------*/
+#tabwrap .row {
+padding:20px 0 0
+}
+
+#jbtabbedArea {
+width:100%;
+float:left
+}
+
+#jbtabbedArea .jbtab_container h3 span {
+text-align: left;
+text-indent: 10px;
+}
+
+ul.jbtabs {
+padding-bottom:10px;
+margin-left:0;
+height:18px;
+position:relative;
+z-index:1;
+margin-bottom:20px;
+padding-bottom:11px;
+border-bottom:4px double #cccccc;
+}
+
+.jbtab_container {
+clear:both
+}
+
+ul.jbtabs li {
+float:left;
+list-style-type:none;
+margin:0;
+padding:0
+}
+
+ul.jbtabs li a:hover {
+color:#fff;
+text-decoration:none;
+}
+
+ul.jbtabs li.active a,ul#filters li a.active { 
+color:#fff;
+border:1px solid #fff !important;
+background:#fafafa;
+margin-top:2px;
+position:relative;
+z-index:2
+}
+
+
+
+ul.jbtabs li a {
+background: #fff;border: 1px solid #ddd !important;
+padding:12px 20px;
+-webkit-border-radius:4px 4px 0 0;
+-moz-border-radius:4px 4px 0 0;
+border-radius:4px 4px 0 0;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+margin-right: 20px;
+border-bottom:none !important;
+box-shadow:1px -1px 8px #DDD;
+-moz-box-shadow:1px -1px 8px #DDD;
+}
+
+.jbtabwidth1 {
+float:left;
+width:100%
+}
+
+.jbtabwidth2 .moduletable {
+float:left;
+width:100%;
+margin-right:2%
+}
+
+.jbtabwidth3 .moduletable {
+float:left;
+width:31%;
+margin-right:2%
+}
+
+.jbtabwidth4 .moduletable {
+float:left;
+width:23%;
+margin-right:2%;
+position:relative;
+z-index:0
+}
+
+
+/* Grid1 Row - Grid modules 1 to 4
+-----------------------------------------------------------------------------
+ Grid2 Row - Grid modules 5 to 8
+-----------------------------------------------------------------------------
+ Grid3 Row - Grid modules 9 to 12
+-----------------------------------------------------------------------------
+ Main Content
+-----------------------------------------------------------------------------*/
+
+#main {
+float:left;
+width:100%
+}
+
+#mainwrap .container {
+padding-top:0;
+padding-bottom:40px
+}
+
+#midCol {
+}
+
+.jbFrontPage .jbintrotext img {
+background:none repeat scroll 0 0 #FFF;
+border:1px solid #EEE;
+box-shadow:0 6px 6px -6px #444;
+padding:10px
+}
+
+#mainContent.threeLR {
+width:100%;
+float:left;
+margin-left:6px
+}
+
+
+
+
+/* MidCol Layout Variations
+-----------------------------------------------------------------------------
+ Main Layout Variations
+-----------------------------------------------------------------------------
+ Common to left, right and center columns
+-----------------------------------------------------------------------------*/
+.sidebar .moduletable,
+.sidebar .moduletable-panelmenu,
+.sidebar .moduletable-slide,
+.sidebar .moduletable_menu {
+margin-bottom:30px;
+}
+
+.sidebar ul li li a {
+text-indent:30px
+}
+
+.sidebar ul li.active li a {
+color:#999;
+padding-bottom:0;
+background:0;
+border:0
+}
+
+.sidebar ul li.active a {
+padding-bottom:3px;
+padding-left:10px;
+border-radius:4px
+}
+
+.sidebar ul li.active {
+border:0;
+margin:0 0 10px;
+padding:0
+}
+
+.sidebar ul li#current li a,.sidebar ul li li.active a {
+background:transparent url(../images/arrow.png) no-repeat 12px center !important;
+padding-left:0;border-bottom: 1px solid #eee;padding:4px;
+}
+
+.sidebar ul li.active li a {
+background-color: transparent !important;padding-left: 0;
+}
+
+.sidebar ul li {
+list-style-type:none;
+border-bottom:1px solid #eee;
+margin:0;
+padding:4px 0
+}
+
+.sidebar ul li.active li.active {
+margin-bottom:0
+}
+
+.sidebar ul li:last-child,.sidebar ul li li:last-child {
+border:0
+}
+
+.sidebar .jbmoduleBody {
+float:left;
+width:84%;
+margin-bottom:60px;
+padding:20px 8%
+}
+
+.sidebar h3 {
+clear:both
+}
+
+/* LeftCol - evens up the space in three col mode
+-----------------------------------------------------------------------------*/
+#leftCol.threeLR,#midCol.threeLR {
+margin-left:-3px
+}
+
+
+/* rightCol - adjustment for two col layout
+-----------------------------------------------------------------------------*/
+#rightCol.twoR .sidebar .jbmoduleBody{
+width: 95%; 
+}
+
+
+/*  Breadcrumbs
+-----------------------------------------------------------------------------*/
+
+#breadcrumbrow {
+font-size:90%;
+color:#999;
+-webkit-border-top-left-radius:3px;
+-webkit-border-top-right-radius:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-topright:3px;
+border-top-left-radius:3px;
+border-top-right-radius:3px;
+margin:0
+}
+
+#breadcrumbrow .container {
+-webkit-border-radius:3px 3px 0 0;
+-moz-border-radius:3px 3px 0 0;
+border-radius:3px 3px 0 0;
+-pie-border-radius:5px 5px 0 0;
+padding-bottom:30px
+}
+
+#breadcrumb {
+padding:0
+}
+
+.pathway img {
+margin:0 2px
+}
+
+#breadcrumb h3 {
+font-size:200%
+}
+
+
+/*  Grid6 Row - Grid modules 21 to 24
+-----------------------------------------------------------------------------*/
+
+#grid6wrap {
+color:#fff;
+overflow:hidden;
+position:relative;
+z-index:0
+}
+
+#grid6wrap .container {
+-webkit-border-radius:0 0 3px 3px;
+-moz-border-radius:0 0 3px 3px;
+border-radius:0 0 3px 3px;
+-pie-border-radius:0 0 8px 5px;
+overflow:hidden;
+position:relative;
+z-index:1;
+padding-bottom:30px
+}
+
+
+/* Bottom Row - Bottom1 to bottom4 modules
+-----------------------------------------------------------------------------*/
+
+#bottomrow {
+margin-top:85px;
+}
+
+#bottomrow {
+-webkit-box-shadow:0 0 0 3px rgba(0, 0, 0, .2);
+-moz-box-shadow:0 0 0 3px rgba(0, 0, 0, .2);
+box-shadow:0 0 0 3px rgba(0, 0, 0, .2);
+}
+
+#bottom,#bottom h1,#bottom h2,#bottom h3,#bottom h4,#bottom h5,#bottom h6 {
+color: #fff;
+}
+
+#topwrap h3,
+#topwrap h3 span,
+#bottomrow h3,
+#bottomrow h3 span,
+#footerwrap h3,
+#footerwrap h3 span,
+#breadcrumb h3,
+#bannerwrap h3,
+#bannerwrap h3 span {
+color:#eee;
+background:none;
+margin-bottom:10px;
+font-size:1.4em;
+border:0 none;
+background-image:none
+}
+
+#headerwrap h3,
+#headerwrap h3 span,
+#grid6wrap h3,
+#grid6wrap h3 span,
+#bottomrow h3 span,
+#breadcrumb h3 span {
+background:none;
+color:#fff;
+}
+
+#bottomrow h3 span,
+#breadcrumb h3 span {
+text-align: left;
+}
+
+#bottom .moduletable h3 span,
+#bottom .moduletable_menu h3 span {
+font-size:100%;
+margin:0
+}
+
+#bottom .moduletable_menu {
+margin: 0;
+padding: 0;
+}
+
+#bottomrow .container {
+padding:30px 0 10px;
+}
+
+#bottom ul {
+margin:0
+}
+
+
+#bottom ul li {
+list-style-type:none;
+display:block;
+padding:8px 0
+}
+
+#socialicons ul li {
+background: none;
+}
+
+
+/* Rules that share the black bevel image */
+#bottom ul li,#footertitle,#footer {
+background:url(../images/blackbevel.png) repeat-x left bottom;
+}
+
+#footertitle,#footer {
+width:100%;
+float:left;
+padding:20px 0 5px;
+}
+
+#footertitle h3 {
+margin:0 0 10px
+}
+
+#footertitle h3 span {
+display:block;
+text-align:center;
+color:#fff;
+}
+
+/* Footer Row - Footer Position
+-----------------------------------------------------------------------------*/
+
+#footerwrap {
+color:#fff;
+padding:20px 0
+}
+
+
+#footerwrap.margin {
+margin-top:85px
+}
+
+#footerwrap .container {
+padding:0 0 30px
+}
+
+#footerwrap.margin #footer {
+background:none
+}
+
+#footer {
+padding-top:20px;
+background-position:left top
+}
+
+#footerLeft {
+float:left
+}
+
+#footerRight {
+width:100%;
+text-align:center
+}
+
+img.jbLogo {
+margin-top:0;
+float:right
+}
+
+#footer ul {
+margin:0
+}
+
+#footer ul li {
+list-style-type:none;
+float:left;
+margin-right:20px
+}
+
+/*System Messages*/
+
+#messageswrap .container {
+	background: transparent none;
+	text-shadow: 0px 0px 5px #FFF;
+}
+
+/* Tooltips */
+div.tooltip,
+.tip-wrap {
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	z-index:13000;
+	font-size: 90%;
+}
+
+div.tooltip h4,
+.tip-title {
+	padding: 0;
+	margin: 0;
+	font-size: 95%;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background: url(../../system/images/selector-arrow.png) no-repeat;
+}
+
+div.tooltip p,
+.tip-text {
+	font-size: 90%;
+	margin: 0;
+}
+
+
+/* Hidden Panel - Core often overriden in template overrides
+-----------------------------------------------------------------------------*/
+
+#zenpanel,#zenoverlay {
+background:url(../images/overlay/blackOverlay.png)
+}
+
+#zenpanel {
+border:0;
+color:#fff;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+-moz-background-clip:padding;
+-webkit-background-clip:padding-box;
+background-clip:padding-box;
+-webkit-box-shadow:0 0 0 6px rgba(0, 0, 0, .2);
+-moz-box-shadow:0 0 0 6px rgba(0, 0, 0, .2);
+box-shadow:0 0 0 6px rgba(0, 0, 0, .2);
+padding-bottom:60px
+}
+
+#zenpanel label,#zenpanel p {
+color:#fff
+}
+
+
+#zenpanel a {
+color:#ddd
+}
+
+#zenpanel h3,#zenpanel h3 span {
+background:none;
+color:#fff;
+text-align:left
+}
+
+#zenpanel .button {
+width:auto;
+float:none
+}
+
+#zenpanel p {
+border:0
+}
+
+#zenpaneltrigger {
+margin-top:0;
+right:10px
+}
+
+a#zenpanelopen {
+height:78px;
+width:64px;
+display:block;
+text-indent:-9999em
+}
+
+a#zenpanelopen:hover {
+text-decoration:none
+}
+
+/* Places the close button off the screen so we dont need to override */
+
+a#zenpanelclose {
+margin-top:-100px
+}
+
+
+/* Close button inside the popup */
+
+a#zenpanelclose2 {
+position:absolute;
+text-indent:-9999em;
+right:8px;
+height:80px;
+width:60px;
+top:0
+}
+
+
+/* Social Icons
+-----------------------------------------------------------------------------*/
+
+#socialicons a {
+border-radius:150px;
+display:block;
+margin:0;
+padding:10px;
+
+}
+
+
+#footer #socialicons,#footer #socialicons li {
+margin: 0;
+}
+
+#footer #socialicons a {
+background: #222;margin-right: 10px;float: left;
+}
+
+
+/* Search
+-----------------------------------------------------------------------------*/
+#search {
+margin-right:85px
+}
+
+#search .inputbox,#search_searchword {
+border:1px solid #c8c8c8;
+font-size:13px;
+color:#333;
+margin:0 20px
+}
+
+#searchForm .button {
+margin-top:8px
+}
+
+#search .moduletable input {
+background:#fff url(../images/search.png) no-repeat 10px center;
+-webkit-box-shadow:inset 0 0 4px 1px rgba(0, 0, 0, .3);
+-moz-box-shadow:inset 0 0 4px 1px rgba(0, 0, 0, .3);
+box-shadow:inset 0 0 4px 1px rgba(0, 0, 0, .3);
+-pie-box-shadow:0 0 4px 1px #CCC;
+border:1px solid #A49E94;
+width:100%;
+webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px 4px 4px 4px;
+-pie-border-radius:4px 4px 6px 4px;
+color:#999;
+font-size:1.2em;
+position:relative;
+overflow:hidden;
+margin:0;
+padding:10px 40px
+}
+
+.results ol li {
+border-bottom:1px dashed #ddd
+}
+
+.results p {
+color:#999;
+font-size:90%;
+margin:0 0 4px
+}
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+a {
+color:#333
+}
+
+/* Headings */
+
+h1,.componentheading {
+color:#333
+}
+
+h2,.contentheading,h2 a {
+color:#333
+}
+
+#banner h2 a {
+color:#fff;
+text-shadow:0 2px 3px #555
+}
+
+.contentheading,h2 {
+margin-bottom:0;
+font-size:2.4em
+}
+
+h3,.moduletable h3 {
+color:#333;
+font-size:2.8em
+}
+
+h4 {
+color:#555;
+font-size:1.3em;
+margin-top:0;
+margin-bottom:.8em;
+font-family:Droid Sans;
+}
+
+h5 {
+color:#333;
+font-size:1.1em;
+font-family:Droid Sans;
+}
+
+h6 {
+color:#333
+}
+
+strong {
+color:#666
+}
+
+.moduletable h3 span,.moduletable-panelmenu h3 span {
+display:block;
+text-align:center;
+}
+
+.moduletable h3,.moduletable-panelmenu h3,.moduletable h3 span,.moduletable-panelmenu h3 span,.moduletable_menu h3 span,.moduletable_menu h3 {
+color:#444;
+padding:8px 0 0
+}
+
+
+/* Rules that share the white bevel image */
+.moduletable h3 span,.moduletable-panelmenu h3 span,.moduletable h3,.moduletable-panelmenu h3,.moduletable h3 span,.moduletable-panelmenu h3 span,.moduletable_menu h3 span,.moduletable_menu h3,div.jbMeta,.features  {
+background:url(../images/bevel.png) repeat-x left top;
+}
+
+.moduletable h3,.moduletable-panelmenu h3,.moduletable_menu h3 {
+background-position:left bottom;
+margin-bottom:30px;
+padding:0 0 8px
+}
+
+.moduletable_menu h3 span {
+display:block
+}
+
+/* Split Menu Spacing
+-----------------------------------------------------------------------------*/
+
+#jbSplitMenuLeft,#jbSplitMenuRight {
+margin-top:25px
+}
+
+#jbSplitMenuLeft ul li,#jbSplitMenuRight ul li {
+text-indent:6px
+}
+
+#subnav {
+font-size:85%;
+padding-bottom:8px
+}
+
+#subnav ul li a {
+margin:0 15px;
+padding:4px
+}
+
+#subnav span.mainlevel span {
+padding:4px
+}
+
+#subnav ul li.active a {
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px
+}
+
+#jbSplitMenuAbove {
+background:#fefefe;
+float:left;
+width:100%;
+border-bottom:1px solid #eee;
+padding:10px 0
+}
+
+#jbSplitMenuAbove ul {
+margin:0 0 0 10px
+}
+
+#jbSplitMenuAbove ul li {
+list-style-type:none;
+float:left;
+font-size:90%;
+margin:0 20px 0 0
+}
+
+#jbSplitMenuAbove ul li#current a {
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+padding:4px
+}
+
+
+/* Panel Menu
+-----------------------------------------------------------------------------*/
+
+.moduletable-panelmenu span.mainlevel {
+cursor:pointer;
+font-size:1.1em;
+display:block;
+padding:0
+}
+
+.moduletable-panelmenu span.mainlevel.close,.moduletable-panelmenu span.mainlevel,h3.close,.moduletable-panelmenu span.separator,.moduletable-panelmenu span.separator.close {
+background:url(../images/menu/smallDownArrow.png) no-repeat 0 center;
+padding-left:30px;
+cursor:pointer
+}
+
+.moduletable-panelmenu span.mainlevel.open,h3.open,.moduletable-panelmenu span.separator.open {
+background:url(../images/menu/smallUpArrow.png) no-repeat 0 center;
+padding-left:30px;
+cursor:pointer
+}
+
+/*Page Break Style*/
+
+dl#tabs h3,
+#sliders h3 {
+line-height: 1.6;
+font-size: 1.5em;
+}
+
+/* Input Styling */
+
+.inputbox,input#email {
+font-size:13px
+}
+
+/* Login */
+form.form-login .inputbox {
+width:90%;
+border:1px solid #ddd
+}
+
+form.form-login .button {
+cursor:pointer;
+clear:both;
+float:left;
+width:100%;
+margin:20px 0
+}
+
+form.form-login p {
+border-bottom:1px solid #eee;
+padding:4px 0
+}
+
+
+/* Overrides 
+ Page classes */
+
+div.jbCategory,.jbSection,.jbFrontPage {
+width:92%;padding: 20px 4%;margin-left: -2px; 
+}
+
+
+.contentdescription {
+margin-bottom:50px
+}
+
+/* PDF Buttons
+-----------------------------------------------------------------------------*/
+div.buttons {
+float:right;
+width:60px;
+text-align:right
+}
+
+div.buttons span.hasTip {
+margin: -20px 20px;
+}
+
+
+/* JB Meta
+-----------------------------------------------------------------------------*/
+
+div.jbMeta {
+padding-bottom:0.6em;
+float:left;
+position: relative;
+width:100%;
+background-position: left bottom
+}
+
+
+/* Section and Categoris
+-----------------------------------------------------------------------------*/
+
+div.jbSectCat {
+font-style: italic;
+float: left;
+margin-right: 20px;
+font-size: 90%;
+}
+
+
+/* Author and date styling */
+div.jbAuthorDate {
+font-size:90%;
+font-style:italic;
+margin-right:20px
+}
+
+span.jbModifydate {
+float:left;
+font-size:90%;
+color:#999;
+font-style:italic;
+clear:both;
+margin-top:10px
+}
+
+span.jbModifydate span {
+margin-right:6px
+}
+
+div.jbCreatedate,span.jbPublished {
+font-size:90%;
+font-style:italic;
+float:left;
+color:#999;
+margin-right:20px
+}
+
+div.jbCreatedate span {
+margin-right:6px
+}
+
+.jbAuthor {
+	font-size: 90%;
+}
+
+
+/* Read more */
+a.jbReadon,.zenmore a {
+float:right;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px;
+border-radius:3px 3px 3px 3px;
+-pie-border-radius:3px 3px 3px 3px;
+border:1px solid #fff;
+-moz-box-shadow:inset 0 0 5px #888;
+-webkit-box-shadow:inset 0 0 3px #666;
+box-shadow:inner 0 0 5px #333;
+-pie-box-shadow:0 0 6px -3px #333;
+position:relative;
+overflow:hidden;
+z-index:10;
+padding:2px 8px !important;
+}
+
+a.jbReadon:hover,.zenmore a:hover {
+text-decoration:none
+}
+
+input,textarea,select {
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px;
+border:1px solid #ccc;
+padding:8px
+}
+
+select {
+padding:3px
+}
+
+input:hover,textarea:hover,select:hover
+input:focus,textarea:focus,select:hover {
+background-color:#eee
+}
+
+button,input[type="reset"],input[type="button"],input[type="submit"] {
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+border:0 none;
+padding:5px 8px
+}
+
+/* Contact */
+
+
+.contact address {
+line-height:1.8
+}
+
+.contact .marker img {
+margin:0 10px 0 0
+}
+
+/*jTweet
+-----------------------------------------------------------------------------*/
+
+.jTweet ul {
+background:url(../images/twitter.png) no-repeat left top
+}
+
+.tweet .tweet_list li {
+border:0;
+padding:0 0 0 60px
+}
+
+.tweet {
+float:left;
+width:100%
+}
+
+.jTweet ul.tweet_list li.tweet_first.tweet_last {
+padding-bottom:0;
+margin:0
+}
+
+
+/*Zentools
+-----------------------------------------------------------------------------*/
+
+ul#filters li a.active {
+background:#fff;
+border:1px solid #ddd;
+-webkit-box-shadow:inset 0 2px 10px 1px rgba(0, 0, 0, .1);
+-moz-box-shadow:inset 0 2px 10px 1px rgba(0, 0, 0, .1);
+box-shadow:inset 0 2px 10px 1px rgba(0, 0, 0, .1)
+}
+
+
+#banner .zenmore a {
+width:100%;
+display:block;
+text-align:center;
+height:22px;
+-webkit-border-radius:2px;
+font-size:1.4em;
+-moz-border-radius:2px;
+border-radius:2px;
+border:0;
+padding:15px 0
+}
+
+#banner .zenmore {
+background:#292929;
+border:1px solid #343434;
+width:60%;
+float:right;
+margin:30px 0 0;
+padding:6px
+}
+
+#banner .slide-controller {
+margin-bottom:20px;
+clear:both;
+padding:10px 0 0px
+}
+
+#banner .slidecount {
+left:0;
+top:20px;
+float:left;
+line-height:2
+}
+
+#banner ul.flex-direction-nav {
+float:left;
+left:0;
+margin-top:25px
+}
+
+.zentools.zenshadow img, .datebadge .moduleItemImage img {
+background:#fff;
+width:94%;
+border:1px solid #eee;
+-webkit-box-shadow:0 8px 6px -6px #000;
+-moz-box-shadow:0 8px 6px -6px #000;
+box-shadow:0 6px 6px -6px #444;
+-pie-box-shadow:0 8px 10px -10px #444;
+padding:10px 3%;
+margin-left:0;
+margin-bottom:15px;
+}
+
+.zentools.accordion h3 {
+margin: 0;
+}
+
+#grid1wrap .jbmoduleBody {
+float:left;width: 95%;
+}
+
+.zencategory {
+font-style:italic
+}
+
+.features {
+clear:both;
+padding:20px 0
+}
+
+input[type="radio"],input[type="checkbox"] {
+border:0 none !important;
+width:auto !important;
+margin:0 3px
+}
+
+
+/* Module Classes
+-------------------------------------------------------------- */
+
+.moduletable-panelmenu.simple .jbmoduleBody,.moduletable-slide.simple .jbmoduleBody,.moduletable.simple .jbmoduleBody {
+background:none;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+-pie-box-shadow:none;
+border:0;
+margin:0 0 30px;
+padding:0
+}
+
+.moduletable.border h3,.moduletable.border h3 span {
+border:0;
+background:none;
+text-align:left
+}
+
+.moduletable.border {
+border-top:1px solid #ddd;
+border-right:1px solid #ddd;
+clear:both;
+margin:30px 0;
+padding:15px 20px
+}
+
+.moduletable.border .jbmoduleBody {
+background:none;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+-pie-box-shadow:none;
+border:0;
+float:none;
+padding:0;
+margin:0;
+width:98% !important;
+}
+
+.moduletable.border h3 {
+	font-size:1.5em;
+	margin-bottom:15px;}
+
+.moduletable-slide h3 {
+text-align:left;
+margin:0
+}
+
+.moduletable.hilite .jbmoduleBody {
+background:#333;
+box-shadow:none;
+border:1px solid #111;
+color:#fff
+}
+
+.moduletable.hilite2 .jbmoduleBody {
+background:#eee;
+box-shadow:none;
+border:1px solid #ddd;
+color:#333
+}
+
+.moduletable-success,.moduletable-warning,.moduletable-notice {
+background:none;
+clear:both
+}
+
+.moduletable-success .jbmoduleBody,.moduletable-warning .jbmoduleBody,.moduletable-notice .jbmoduleBody {
+background:none;
+border:0;
+box-shadow:none;
+padding:0
+}
+
+.moduletable-success h3,.moduletable-warning h3,.moduletable-notice h3 {
+clear:both;
+text-align:center;
+margin:0 0 20px;
+padding:8px 0 0 8px
+}
+
+.moduletable-notice h3 {
+background:#FFF6BF;
+border-bottom:1px solid #FFD324
+}
+
+.moduletable-warning h3 {
+background:#FBE3E4;
+border-bottom:1px solid #FBC2C4
+}
+
+.moduletable-success h3 {
+background:#E6EFC2;
+border-bottom:1px solid #C6D880
+}
+
+.moduletable.bottom0 {margin-bottom:0}
+.moduletable.bottom0 .jbmoduleBody {margin-bottom:0}
+
+.moduletable .moduleTitle h3 span.jbspan {font-size:.7em;font-family:droid sans;font-style:italic;}
+
+
+
+/* First Background Hovers
+---------------------------------------------------*/
+#socialicons a:hover,div.k2CommentsForm form input#submitCommentButton,ul.jbtabs li a:hover,#subnav ul li.active a,.sidebar ul li.active a,#jbSplitMenuAbove ul li#current a,a.jbReadon,span.featured,a.k2ReadMore,
+form#form-login input.button,#eblog-search .button-search,
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+	-webkit-transition: background 0.2s linear;
+	-moz-transition: background 0.2s linear;
+	-o-transition: background 0.2s linear;
+	transition: background 0.2s linear;
+}
+ 
+/* Nav Active and hover color
+---------------------------------------------------*/
+#nav ul > li li.active > a,
+#nav ul > li li > a:hover,
+.moduletable-superfish ul > li li.active > a,
+.moduletable-superfish ul > li li > a:hover {
+border: 0;
+}
+
+
+/* Slideshow disc colours
+---------------------------------------------------*/
+.slidenavdiscs ul li {
+	height: 10px;
+}
+
+.slidenavdiscs ul li.active {
+	background-position: 0 -19px !important;
+}
+
+/* Borders on Superfish
+---------------------------------------------------*/
+#nav ul li li,
+.moduletable-superfish ul li li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+#nav ul li li:first-child,
+.moduletable-superfish ul li li:first-child {
+	border-top: 0;
+}
+
+#nav ul li li:last-child,
+.moduletable-superfish ul li li:last-child {
+	border-bottom: 0;
+}
+
+#nav ul li li a:hover {
+	border-bottom: 0;
+}
+
+/* Colours for background hover states
+---------------------------------------------------*/
+#nav ul li:hover, 
+#nav ul li.sfHover,
+#nav ul a:focus, 
+#nav ul a:hover,
+#nav ul a:active,
+#nav ul li li.active,
+.moduletable-superfish ul li:hover, 
+.moduletable-superfish ul li.sfHover,
+.modueltable-superfish ul a:focus, 
+.moduletable-superfish ul a:hover,
+.moduletable-superfish ul a:active,
+.modueltable-superfish  ul li li.active {
+	outline: 0;
+}
+
+
+table.contenttoc {
+width: 20%;
+}
+
+/* Added Zentools overrides
+-----------------------------------------------------------------------------*/
+#zentoolslist116 .zeninner div.column {margin-right:2% !important;}
+#zentoolslist116 .column2 {width:22.5% !important;}
+.allitems.container {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;border:none;}
+.moduletable.single .zentools.list ul li {border-bottom:none;}
+.moduletable.2vs1 .column {margin-right:1% !important;}
+.moduletable.2vs1 .column2 {width:25% !important;}
+
+.dateBadge .zentitle {position:relative;left:8px;margin-top:5px;margin-left:8px;border:1px solid #dddddd;border-radius:5px;padding:5px;background:#ffffff;}
+.dateBadge .zentitle h2 {font-size:1.9em;font-family:droid sans; background:#444444;border:1px solid:#222222;border-radius:5px; text-align:center;color:#ffffff;line-height:1em;padding:10px 5px 5px}
+.dateBadge .zentitle h2 .jbspan {font-size:60%;line-height:1.3em;}
+
+/* Added Ohanah overrides
+-----------------------------------------------------------------------------*/
+.ohanah .event_date_flyer_container {background:#ffffff;border:1px solid #d1d1d1 !important;}
+
+.ohanah.module.border {border:none;background:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;padding:0;margin-bottom:0;}
+
+.markedDay .ui-state-default, .markedDay .ui-state-default:hover {background: #ffffff url(http://driftingseas.dev/templates/jbepicure/images/unavailable.png) 50% 50% repeat-x !important; }
+.ui-datepicker-today {background:#ffffff !important}
+.markedDay a, .ui-datepicker-today a {color:#cccccc !important;border:1px solid #dddddd !important;}
+.moduletable .ui-datepicker-calendar a {cursor: default !important;pointer-events: none;}
+ui-datepicker-other-month {opacity:0}
+a.ui-state-default {pointer-events: none; cursor: default; text-align: center !important;}
+
+/* Template overrides
+-----------------------------------------------------------------------------*/
+.contact button.button {
+	clear: both;
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1em;}
+	
+#tabwrap .container.center, #grid2wrap .container.center, #grid3wrap .container.center, #grid4wrap .container.center, #grid5wrap .container.center, #grid6wrap .container.center {
+	padding-top:70px;}
+	
+ #mainwrap .container.center {padding-top:30px}
+	
+#tabwrap {clear:both;}
+
+#bottom {text-align:center}
+#bottom p {color:#999999}
+
+
+/* Date Box k2 schedule content
+-----------------------------------------------------------------------------*/
+.datebox .zenextrafields br {line-height:0;}
+.zenextrafields div.datebox {
+	float: left;
+    font-family: oxygen;
+    margin: 0 3%;
+    text-align: center;
+    width: 27%;
+    -moz-border-radius: 5px;
+    -moz-box-shadow: inset 0px 0px 3px #333333;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px #333333;}
+.zenextrafields div.datebox div.month {
+	border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+    background: none repeat scroll 0 0 #555555;
+    color: #DDDDDD;
+    font-size: 1.1em;}
+.zenextrafields div.datebox div.date { 
+	border-radius:0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+    color: #555555;
+    font-size: 1.5em;
+    font-weight: bold;}
+.zenextrafields div.datebox div.weekday {
+	border-top: 1px solid #CCCCCC;
+    color: #999999;
+    font-size: 0.7em;
+    margin: 0 4px 2px;}
+    	
+
+
+
+/* Date Badge
+-----------------------------------------------------------------------------*/
+.moduletable.datebadge ul {margin-left:0;}
+.moduletable.datebadge li.even {width:48%;float:left;margin-bottom:30px;}
+.moduletable.datebadge li.odd {width:48%;float:right;margin-bottom:30px;}
+.moduletable.datebadge .moduleItemDateCreated {
+	background:#ffffff;
+	border:1px solid #dddddd;
+	padding:5px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-pie-border-radius:5px;
+	position:relative;
+	left:8px;}
+.moduletable.datebadge .moduleItemDateCreated .dateflyer {
+	background: #444;
+	border: 1px solid:#222;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-pie-border-radius:5px;
+	text-align: center;
+	color: white;
+	line-height: 1em;
+	padding: 10px 5px 5px;
+	color:#eeeeee;}
+.moduletable.datebadge .moduleItemDateCreated h2 {font-family: droid sans;color:#eeeeee;}
+.moduletable.datebadge .moduleItemDateCreated h2.day {font-size:2.4em;line-height:1.1em;font-weight:bold;}
+.moduletable.datebadge .moduleItemDateCreated h2.month {font-size:1.9em;line-height:1em;}
+.moduletable.datebadge .moduleItemDateCreated h2.year {font-size: 1.2em;line-height:1.8em;}
+
+.log #zenkit .zenkitdate {font-weight:bold;color:#555;font-style:normal;font-size:100%}
+
+
+
+
+/* Special page css
+-----------------------------------------------------------------------------*/
+.itemid175 #grid4wrap .container.center,
+.itemid175 #grid5wrap .container.center, 
+.itemid175 #grid6wrap .container.center,
+.item #grid4wrap .container.center,
+.item #grid5wrap .container.center, 
+.item #grid6wrap .container.center {padding-top:0;padding-bottom:0;}
+
+.itemid174 .groupPrimary .k2ImageBlock {margin:0 15px 15px 0;float:left;}
+.itemid174 .groupPrimary .k2IntroText {clear:none;}
+.itemid174 .k2ExtraFields {margin:0;padding:0;border:none}
+
+
+/* Tools
+-----------------------------------------------------------------------------*/
+.clr,.clear { height: 0 !important; visibility: hidden !important; line-height: 0 !important; clear: both !important; border: 0 none !important; content: "."; display: block !important; font-size: 0 !important; margin: 0 !important; padding: 0 !important; }
+* html .clr,* html .clear { height: 1%; overflow: visible; }
+*+html .clr,*+html .clear { min-height: 1%; }
+.clr:after,.clear:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; font-size: 0; }http://localhost:8888/base/joomla25/index.html/joomla-related/content/category-blog/4-columns6
+
+

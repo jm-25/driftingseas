@@ -1,0 +1,383 @@
+/*------------------------------------------------------------------
+Template:	JB Epicure
+Version:	Joomla 1.5
+Zen Grid: 	v2.0
+Copyright:	Joomlabamboo
+Created:	February 2012
+------------------------------------------------------------------*/
+
+.editLink { text-align: right; background: #eee; float: right; border: 1px solid #e1e1e1; margin: -10px 0 4px; padding: 0 8px; }
+body.contentpane #k2Container { padding: 16px; }
+
+/* used in popups */
+.clearList { display: none; float: none; clear: both; }
+.clear { clear: both; height: 0; line-height: 0; display: block; float: none; }
+
+.k2ItemContainer.cols2 { float: left; width: 48%; }
+.k2ItemContainer.cols3 { width: 32%; float: left; margin-right: 2%; *margin-right: 1.8%; }
+.k2ItemContainer.cols4 { width: 23%; float: left; margin-right: 2%; }
+.k2ItemView { margin: 0 0 60px; padding: 0 0 20px; }
+.k2ItemHeader { float: left; padding-bottom: 10px; width: 100%; position: relative; z-index: 1; }
+div.k2Pagination { text-align: center; color: #999; margin: 24px 0 4px; }
+#k2Container.itemView { margin-bottom: 60px !important; padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+
+/* Title Header and featured
+---------------------------------------------------*/
+h2.k2Title { width: 100%; margin-bottom: 8px; position: relative; font-size: 2.4em; }
+.k2Header { float: left; width: 100%; font-size: 90%; margin-bottom: 20px; line-height: 1; position: relative; z-index: 1; padding: 0 0 4px; border-bottom: 1px solid #ddd; }
+span.featured { font-size: 11px; margin-top: 0; text-align: right; background: #eee; float: right; line-height: 1.8; position: absolute; right: 0; top: 0; padding: 0 8px; }
+
+/* Meta Info Dates etc
+---------------------------------------------------*/
+.createDate { float: left; margin-top: 0; margin-right: 20px; line-height: 1; font-size: 90%; color: #666; margin-left: 0; text-align: center; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.createDate span { margin-right: 4px; }
+span.dateday { font-size: 1em; text-align: center; float: left; }
+
+/* Reset for date style for layouts that dont suit the large offset date */
+.k2ItemContainer.cols2 .createDate { font-size: 11px; float: left; font-style: italic; color: #999; margin-bottom: 40px; margin-top: 4px; }
+.k2ItemContainer.cols2 span.dateday, .k2ItemContainer.cols3 span.dateday, .k2ItemContainer.cols4 span.dateday, #midCol.threeLR span.dateday, #midCol.fourLRC span.dateday, #midCol.twoL span.dateday { font-size: 1em; display: inline; float: left; width: auto; }
+ .k2ItemContainer.cols2 span.datemonth, .k2ItemContainer.cols3 span.datemonth, .k2ItemContainer.cols4 span.datemonth, .k2ItemContainer.cols2 span.dateyear, .k2ItemContainer.cols3 span.dateyear, .k2ItemContainer.cols4 span.dateyear, { font-size: 1em; }
+.k2Author { float: left; margin-right: 20px; line-height: 1; }
+.k2Category { font-weight: 700; color: #555; float: left; margin-right: 20px; line-height: 1; padding: 0 4px 4px 0; }
+#midCol h3.k2AuthorName { background: none; border: none; }
+
+/* Toolbar
+---------------------------------------------------*/
+#k2Container .k2Toolbar { line-height: 2em; }
+#k2Container .k2Toolbar ul { float: left; width: 100%; margin: 0; }
+#k2Container .k2Toolbar ul li { list-style: none; float: left; margin: 4px 10px 0 0; padding: 0; }
+#k2Container .k2Toolbar ul li a { margin: 0; padding: 0; }
+.k2Toolbar ul li a img { vertical-align: middle; margin-top: -4px; }
+
+/* Resizer
+---------------------------------------------------*/
+.smallerFontSize { font-size: 100%; line-height: inherit; }
+.largerFontSize { font-size: 150%; line-height: 140%; }
+.k2Toolbar ul li a#fontDecrease, .k2Toolbar ul li a#fontIncrease { margin: 0 0 0 2px; }
+.k2Toolbar ul li a#fontDecrease img, .k2Toolbar ul li a#fontIncrease img { width: 13px; height: 13px; background: url(../html/com_k2/templates/epicure/images/system/font_decrease.gif) no-repeat; }
+.k2Toolbar ul li a#fontIncrease img { background: url(../html/com_k2/templates/epicure/images/system/font_increase.gif) no-repeat; }
+
+/* Buttons
+---------------------------------------------------
+ Ratings
+---------------------------------------------------*/
+.k2RatingBlock { padding-bottom: 10px; font-size: 90%; }
+.k2RatingBlock span { color: #ccc; }
+.itemRatingForm { width: 96%; }
+.itemRatingLog { float: right; font-size: 90%; color: #ccc; }
+.itemRatingForm .formLogLoading { background: url(../html/com_k2/templates/epicure/images/system/loading.gif) no-repeat left center; height: 25px; padding: 0 0 0 20px; }
+.k2RatingList, .k2RatingList a:hover, .k2RatingList .itemCurrentRating { background: url(../html/com_k2/templates/epicure/images/system/transparent_star.gif) left -1000px repeat-x; }
+.k2RatingList { position: relative; float: left; width: 125px; height: 25px; overflow: hidden; list-style: none; background-position: left top; margin: 0; padding: 0; }
+.k2RatingList li { display: inline; background: none; padding: 0; }
+.k2RatingList a, .k2RatingList .itemCurrentRating { position: absolute; top: 0; left: 0; text-indent: -1000px; height: 25px; line-height: 25px; outline: none; overflow: hidden; border: none; cursor: pointer; }
+.k2RatingList a:hover { background-position: left bottom; }
+.k2RatingList a.one-star { width: 20%; z-index: 6; }
+.k2RatingList a.two-stars { width: 40%; z-index: 5; }
+.k2RatingList a.three-stars { width: 60%; z-index: 4; }
+.k2RatingList a.four-stars { width: 80%; z-index: 3; }
+.k2RatingList a.five-stars { width: 100%; z-index: 2; }
+.k2RatingList .itemCurrentRating { z-index: 1; background-position: 0 center; margin: 0; padding: 0; }
+
+/* Items
+---------------------------------------------------*/
+.k2ItemBody { margin-top: 10px; clear: both; float: left; }
+
+/* K2 Image
+---------------------------------------------------*/
+.k2ImageBlock { margin: 0 0 16px; }
+.k2Image { display: block; text-align: center; margin: 0 0 8px; }
+.k2Image img { border: 1px solid #ccc; }
+.k2ImageCaption { color: #666; float: left; display: block; font-size: 11px; }
+.k2ImageCredits { color: #999; float: right; display: block; font-style: italic; font-size: 11px; }
+.k2IntroText { clear: both; padding-bottom: 10px; margin-bottom: 10px; width: 100% !important; }
+.itemFullText { width: 96%; margin: 0 0 10px; padding: 0 4% 20px 0; }
+
+/* Extra Fields
+---------------------------------------------------*/
+.k2ExtraFields { border-top: 1px dotted #e3e3e3; margin: 16px 0 0; padding: 8px 0 0; }
+#midCol .k2ExtraFields h3 { line-height: normal !important; border: none; margin: 0; padding: 0 0 8px; }
+.k2ExtraFields ul { list-style: none; margin: 0; padding: 0; }
+.k2ExtraFields ul li span.itemExtraFieldsLabel { display: block; float: left; font-weight: 700; width: 30%; margin: 0 4px 0 0; }
+
+/* Links and Hits
+---------------------------------------------------*/
+.k2Links { padding: 0; float: left; width: 100%; }
+.k2Links span { font-weight: bold; }
+.catItemView .k2Links, .k2ItemView .k2Links { border: 0; float: left; width: 75%; }
+#k2Links ul { margin: 0; }
+#k2Links ul li { display: block; padding: 4px 0; border-bottom: 1px solid #eee !important; }
+.k2Hits { float: left; font-size: 90%; color: #ccc; }
+.k2HitsTwitterSep { color: #ccc; padding: 0 8px; }
+.k2HitsTwitterLink a { background: url(../html/com_k2/templates/epicure/images/social/twitter_16.png) no-repeat 0 50%; text-decoration: none; margin: 8px 0; padding: 2px 0 0 20px; }
+.k2HitsTwitterLink a:hover { text-decoration: none; }
+
+/* Tags
+---------------------------------------------------*/
+.k2TagsBlock { padding-bottom: 4px; clear: both; float: left; }
+.itemView .k2TagsBlock, .itemView .k2HitsTwitter { float: left; width: 100%; padding: 8px 0 8px; border-top: 1px solid #eee; margin: 0 0; }
+.itemSocialSharing { float: left; width: 100%; padding-bottom: 12px !important; }
+.itemView .k2TagsBlock span { display: inline; float: left; margin-right: 10px; }
+.k2TagsBlock ul.k2Tags li { display: inline; list-style: none; text-align: center; margin: 0; padding: 0 4px 0 0; }
+.k2Tags { margin: 0; }
+.k2Tags li { list-style-type: none; margin: 0; float: left; margin-right: 10px !important; }
+
+/* Attachments
+---------------------------------------------------*/
+.k2AttachmentsBlock { padding: 4px; }
+.k2AttachmentsBlock ul.itemAttachments li { display: inline; list-style: none; text-align: center; margin: 0; padding: 0 4px; }
+.k2AttachmentsBlock ul.itemAttachments li span { font-size: 10px; color: #999; }
+
+/* Video 
+---------------------------------------------------*/
+.k2VideoBlock { margin: 0 0 16px; padding: 0 0 30px; }
+.k2VideoEmbedded { text-align: center; }
+
+/* for embedded videos (not using AllVideos) */
+.k2VideoVideo { display: block; overflow: hidden; }
+.k2VideoVideoCaption { color: #eee; float: left; display: block; font-size: 11px; font-weight: 700; width: 60%; }
+.k2VideoCredits { color: #eee; float: right; display: block; font-style: italic; font-size: 11px; width: 35%; text-align: right; }
+
+/* Image Gallery
+---------------------------------------------------
+ Social Links
+---------------------------------------------------*/
+.k2SocialLinksBlock { clear: both; margin: 20px 0 20px; padding: 0 0 10px; }
+div.k2SocialLinksBlock span { font-weight: 700; color: #555; float: left; display: block; line-height: 1em; padding: 0 4px 0 0; }
+div.k2SocialLinksBlock ul.k2SocialLinks { list-style: none; float: left; margin: 0; padding: 0; }
+div.k2SocialLinksBlock ul.k2SocialLinks li { float: left; list-style: none; margin: 0; padding: 0 4px; }
+div.k2SocialLinksBlock ul.k2SocialLinks li a { float: left; display: block; width: 16px; height: 16px; background-position: 0 0; background-repeat: no-repeat; }
+a.delicious { background-image: url(../html/com_k2/templates/epicure/images/social/delicious_16.png); }
+a.digg { background-image: url(../html/com_k2/templates/epicure/images/social/digg_16.png); }
+a.facebook { background-image: url(../html/com_k2/templates/epicure/images/social/facebook_16.png); }
+a.googlebuzz { background-image: url(../html/com_k2/templates/epicure/images/social/googlebuzz_16.png); }
+a.myspace { background-image: url(../html/com_k2/templates/epicure/images/social/myspace_16.png); }
+a.reddit { background-image: url(../html/com_k2/templates/epicure/images/social/reddit_16.png); }
+a.stumble { background-image: url(../html/com_k2/templates/epicure/images/social/stumbleupon_16.png); }
+a.technorati { background-image: url(../html/com_k2/templates/epicure/images/social/technorati_16.png); }
+
+/* Author Block
+---------------------------------------------------*/
+.k2AuthorBlock { margin: 0 0 60px !important; clear: both; padding: 0; }
+.k2AuthorAvatar { float: left; margin-right: 30px; padding: 4px; }
+img.k2AuthorAvatar { border: 1px solid #ddd; }
+img.itemAuthorAvatar { float: left; display: block; background: #E3E4DF; border: 1px solid #e3e3e3; margin: 0 8px 0 0; padding: 4px; }
+.k2AuthorDetails { margin: 0; padding: 4px 0 0px; }
+.k2AuthorName { margin: 0 0 4px; padding: 0; }
+.k2AuthorName a { font-size: 16px; }
+.k2AuthorUrl { font-weight: 700; color: #555; margin: 0 4px 0 0; padding: 0 8px 0 0; }
+.k2AuthorEmail { font-weight: 700; color: #555; }
+
+/* Authors Module
+---------------------------------------------------*/
+.ubUserAvatar img { padding: 2px !important; background: #fff; border: 1px solid #eee !important; -webkit-box-shadow: 0 8px 6px -6px black; -moz-box-shadow: 0 8px 6px -6px black; box-shadow: 0 6px 6px -6px #444; }
+.k2UsersBlock h3 { padding: 20px 0 !important; }
+.ubUserItems li { border-bottom: 1px solid #ddd; padding: 8px 0 !important; text-indent: 0; }
+
+/* K2 Author Latest
+---------------------------------------------------*/
+.k2AuthorLatest { padding-bottom: 10px; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+.k2AuthorLatest ul { margin: 0; }
+.k2AuthorLatest ul li { list-style-type: none; margin: 0; padding: 4px 0; border-bottom: 1px solid #eee; }
+.k2AuthorLatest ul li:last-child { border: 0; }
+
+/* Related Items
+---------------------------------------------------
+ Read More
+---------------------------------------------------*/
+a.k2ReadMore { float: right; padding: 2px 8px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+
+/* Modify Date
+---------------------------------------------------*/
+.k2DateModified { display: block; clear: both; float: left; text-align: left !important; border-top: 1px solid #eee; color: #999; font-size: 90%; font-style: italic; width: 96%; margin: 0 0 4px !important; padding: 8px 0 !important; }
+
+/* Navigation
+---------------------------------------------------*/
+.k2Navigation { float: left; width: 96%; margin: 0 0 30px; border-bottom: 1px solid #ddd; padding: 0 4% 10px 0; }
+.k2NavigationTitle { font-weight: 700; display: block; }
+
+/* Related item by tag
+---------------------------------------------------*/
+.k2Related { border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+.k2Related ul { margin-left: 0; }
+#k2Container .tagItemView { margin-bottom: 60px; }
+
+/* Comments
+---------------------------------------------------*/
+.k2CommentsLink { float: left; line-height: 1; margin-right: 20px;}
+.k2Toolbar ul li a.k2CommentsLink { margin-top: 5px !important; }
+
+/* Comments List
+---------------------------------------------------*/
+.k2Comments { float: left; width: 100%; margin-bottom: 20px; padding-bottom: 30px; }
+.k2CommentsList li { list-style-type: none; margin: 0 0 10px; padding: 0 0 10px; border-bottom: 1px dotted #ddd; }
+.k2CommentsList li img { float: left; border: 1px solid #ddd; margin-right: 20px; padding: 4px; }
+ul.k2CommentsList { list-style: none; margin: 0 0 16px; padding: 0; }
+ul.k2CommentsList li { margin: 0 0 10px; padding: 10px; }
+ul.k2CommentsList li img { float: left; background: #fefefe; border: 1px solid #ddd; margin: 4px 20px 4px 0; padding: 4px; }
+ul.k2CommentsList li span.commentDate { border-right: 1px solid #e3e3e3; font-style: italic; color: #999; font-size: 90%; margin: 0 20px 0 0; padding: 0 4px 0 0; }
+ul.k2CommentsList li span.commentAuthorName { color: #999; font-size: 90%; }
+ul.k2CommentsList li p { margin: 0 0 10px; padding: 0; }
+ul.k2CommentsList li span.commentLink a { font-size: 11px; color: #999; text-decoration: underline; }
+ul.k2CommentsList li span.commentLink a:hover { font-size: 11px; color: #555; text-decoration: underline; }
+
+/* Comments meta
+---------------------------------------------------*/
+.commentLink { font-size: 90%; float: right; }
+.commentDate { font-size: 90%; color: #999; }
+.commentAuthorName { font-size: 90%; float: right; color: #999; }
+
+/* Comments Pagination
+---------------------------------------------------*/
+div.k2CommentsPagination { margin: 0 0 24px; padding: 4px; }
+div.k2CommentsPagination span.pagination { display: block; float: right; clear: both; }
+
+/* Comments Form
+---------------------------------------------------*/
+#midCol div.k2CommentsForm h3 { border: none; margin: 0; padding: 0 0 10px; }
+div.k2CommentsForm { margin-top: 60px; }
+div.k2CommentsForm form textarea.inputbox { display: block; width: 93%; height: 160px; border: 1px solid #ddd; clear: both; margin: 0; }
+div.k2CommentsForm form input.inputbox, form#form-login input { display: block; width: 93%; border: 1px solid #ddd; margin: 0; }
+form#form-login input.button { width: auto; }
+form#form-login input#modlgn_remember.inputbox { float: left; width: auto; margin-right: 10px; margin-top: 2px; }
+input#submitCommentButton, form#form-login input.button { float: none !important; cursor: pointer; text-align: center; clear: both; border: 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 40px 0 0 !important; background: #eee; padding: 10px; }
+.contact button.button { clear: both; margin-top: 30px; }
+div.k2CommentsForm form span#formLog { font-weight: 700; color: #CF1919; margin: 0 0 0 20px; padding: 0 0 0 20px; }
+div.k2CommentsForm form .formLogLoading { background: url(../html/com_k2/templates/epicure/images/system/loading.gif) no-repeat left center; }
+.k2FeedIcon a, .k2FeedIcon a:hover { display: block; float: right; width: 16px; height: 16px; background: url(../html/com_k2/templates/epicure/images/fugue/feed.png) no-repeat 50% 50%; margin: 10px 10px 0 0; padding: 0; }
+
+/* reCaptcha
+---------------------------------------------------*/
+.recaptchatable .recaptcha_image_cell, #recaptcha_table { background-color: #fff !important; }
+#recaptcha_table { border-color: #ccc !important; }
+#recaptcha_response_field { background-color: #fff !important; border-color: #ccc !important; }
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_login
+----------------------------------------------------------------------*/
+div.k2LoginBlock fieldset.input { margin: 0; padding: 0 0 8px; }
+div.k2LoginBlock fieldset.input p { margin: 0; padding: 0 0 4px; }
+div.k2LoginBlock fieldset.input p#form-login-remember label, div.k2LoginBlock fieldset.input p#form-login-remember input { display: inline; }
+#k2Container .userBlock { margin-bottom: 60px; padding-bottom: 10px; }
+.userBlock img, .latestItemsUser img { float: left; margin-right: 20px; background: #fefefe; border: 1px solid #ddd; padding: 4px; }
+div.k2UserBlock div.k2UserBlockDetails span.ubName { display: block; font-weight: 700; font-size: 14px; }
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_tools
+----------------------------------------------------------------------
+ --- Archives --- 
+ --- Authors --- */
+div.k2AuthorsListBlock ul li a.abAuthorLatestItem { display: block; clear: both; }
+
+/* --- Breadcrumbs --- */
+div.k2BreadcrumbsBlock span.bcTitle { color: #999; padding: 0 4px 0 0; }
+div.k2BreadcrumbsBlock span.bcSeparator { font-size: 14px; padding: 0 4px; }
+
+/* --- Calendar --- */
+div.k2CalendarBlock { margin-bottom: 8px; }
+
+/* use this height value so that the calendar height won't change on Month change via ajax */
+div.k2CalendarLoader { background: #fff url(../html/com_k2/templates/epicure/images/system/k2CalendarLoader.gif) no-repeat 50% 50%; }
+table.calendar { background: #fff; border-collapse: collapse; margin: 0 auto; }
+table.calendar tr td { text-align: center; vertical-align: middle; border: 1px solid #ffffff; background: #ffffff; padding: 2px; color:#ffffff;}
+table.calendar tr td a {border:1px solid #dddddd;}
+table.calendar tr td a.calendarNavLink {border:none; color:#444444}
+table.calendar tr td.calendarNavMonthPrev { text-align: left; }
+table.calendar tr td.calendarCurrentMonth { color:#444444; font-weight:bold;}
+table.calendar tr td.calendarNavMonthNext { text-align: right; }
+table.calendar tr td.calendarDayName { font-size: 11px; width: 14.2%; font-weight:bold; color:#444 }
+table.calendar tr td.calendarDate {padding:1px 3px 1px 1px; }
+    table.calendar tr td.calendarDate div.reserved {width:100%; height:100%; cursor:default;display:inline-block;
+    border: 1px solid #ccc;
+    background:url(http://i.piccy.info/i7/c7a432fe0beb98a3a66f5b423b430423/1-5-1789/1066503/lol.png);
+    background-size:100% 100%;
+    background-position:50%;}
+table.calendar tr td.calendarDateEmpty {}
+table.calendar tr td.calendarDateLinked { padding: 1px; }
+table.calendar tr td.calendarDateLinked a { display: block; text-decoration: none; padding: 2px; color:#777777 !important; }
+table.calendar tr td.calendarDateLinked a:hover { display: block; background: #74856E; color: #ffffff !important; text-decoration: none; padding: 2px; cursor:default;}
+table.calendar tr td.calendarToday { padding:2px; font-weight:bold; color: #444444;background:#ffffff;}
+table.calendar tr td.calendarTodayLinked { }
+table.calendar tr td.calendarTodayLinked a { display: block; text-decoration: none; padding: 2px; border:none; }
+table.calendar tr td.calendarTodayLinked a:hover {text-decoration: none;  }
+
+/* --- Category Tree Select Box --- */
+div.k2CategorySelectBlock form select { width: auto; }
+
+/* --- Category List/Menu --- */
+div.k2CategoriesListBlock ul li.activeCategory a { font-weight: 700; }
+
+/* --- Tag Cloud --- */
+div.k2TagCloudBlock { padding: 8px 0; }
+div.k2TagCloudBlock a { float: left; display: block; padding: 4px; }
+div.k2TagCloudBlock a:hover { float: left; display: block; background: #135cae; color: #fff; text-decoration: none; padding: 4px; }
+
+/* --- Google Search --- */
+#k2Container div.gsc-branding-text { text-align: right; }
+#k2Container div.gsc-control { width: 100%; }
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_comments
+----------------------------------------------------------------------*/
+.k2LatestCommentsBlock img { float: left; background: #fff; border: 1px solid #ccc; margin: 0 20px 0 0; padding: 4px; }
+.k2LatestCommentsBlock ul li { float: left; width: 100%; border-bottom: 1px dashed #999; margin: 0 0 20px; padding: 8px 0 !important; }
+.k2LatestCommentsBlock ul { width: 100%; float: left !important; }
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_users
+----------------------------------------------------------------------*/
+a.ubUserFeedIcon, a.ubUserFeedIcon:hover { display: inline-block; width: 16px; height: 16px; background: url(../html/com_k2/templates/epicure/images/fugue/feed.png) no-repeat 50% 50%; margin: 0 2px 0 0; padding: 0; }
+a.ubUserURL, a.ubUserURL:hover { display: inline-block; width: 16px; height: 16px; background: url(../html/com_k2/templates/epicure/images/fugue/globe.png) no-repeat 50% 50%; margin: 0 2px 0 0; padding: 0; }
+span.ubUserEmail { display: inline-block; width: 16px; height: 16px; background: url(../html/com_k2/templates/epicure/images/fugue/mail.png) no-repeat 50% 50%; overflow: hidden; margin: 0 2px 0 0; padding: 0; }
+span.ubUserEmail a { display: inline-block; width: 16px; height: 16px; text-indent: -9999px; margin: 0; padding: 0; }
+div.k2UsersBlock ul li h3 { clear: both; margin: 8px 0 0; padding: 0; }
+
+/*----- Fix for the edit window   ---*/
+h2.header { width: 70% !important; }
+.lastItem, .catItemView .k2RatingBlock, #midCol .k2VideoBlock h3, .k2LatestCommentsBlock ul li.clearList { border: none; }
+.catItemView, .latestItemView, .subCategory, #k2Container .latestItemsUser { margin-bottom: 60px; }
+.even, .odd { list-style-type: none; margin: 0; padding: 2px; }
+.k2ItemContainer.itemContainerLast.cols2, .k2Next, ul.k2CommentsList li span.commentLink, .k2FeedIcon { float: right; }
+.k2ItemContainer.itemContainerLast.cols3, .k2ItemContainer.itemContainerLast.cols4 { float: right; margin: 0; }
+span.datemonth, span.dateyear { font-size: 1em; float: left; }
+.cols2 .k2CommentsLink, .k2Toolbar ul li span.itemTextResizerTitle, .catItemView .itemRatingLog, .k2Previous { float: left; margin: 0; }
+.cols3 .k2CommentsLink, .cols4 .k2CommentsLink { float: left; margin: 0 0 8px; }
+.cols3 span.featured { position: relative; float: left; margin-bottom: 8px; }
+.k2Toolbar ul li a#fontDecrease span, .k2Toolbar ul li a#fontIncrease span, div.k2SocialLinksBlock ul.k2SocialLinks li a span, ul.k2CommentsList li span.commentAuthorEmail, .k2FeedIcon a span, .k2FeedIcon a:hover span, #k2Container div.gs-visibleUrl, a.ubUserFeedIcon span, a.ubUserFeedIcon:hover span, a.ubUserURL span, a.ubUserURL:hover span { display: none; }
+.k2ExtraFieldsul li, div.k2LoginBlock fieldset.input p label, div.k2LoginBlock fieldset.input p input { display: block; }
+.k2TagsBlock span, .k2AttachmentsBlock span { font-weight: 700; color: #555; padding: 0 4px 0 0; display: block; }
+.k2TagsBlock ul.k2Tags, .k2AttachmentsBlock ul.itemAttachments { list-style: none; display: inline; margin: 0; padding: 0; }
+div.k2CommentsForm form label.formComment, div.k2CommentsForm form label.formName, div.k2CommentsForm form label.formEmail, div.k2CommentsForm form label.formUrl, div.k2CommentsForm form label.formRecaptcha { display: block; margin: 12px 0 0; }
+table.calendar tr td.calendarNavMonthPrev a, table.calendar tr td.calendarNavMonthPrev a:hover, table.calendar tr td.calendarNavMonthNext a, table.calendar tr td.calendarNavMonthNext a:hover { font-size: 20px; text-decoration: none; }
+
+.k2LatestCommentsBlock ul li a, div.k2UsersBlock ul li a { padding: 0 !important; }
+
+div.itemSocialSharing { padding: 8px 0; }
+div.itemTwitterButton { float: left; margin: 2px 24px 0 0; }
+div.itemFacebookButton { float: left; margin-right: 24px; width: 200px; }
+div.itemGooglePlusOneButton { }
+
+div.k2Comments ul.k2CommentsList li span.commentToolbar { display: block; clear: both; }
+div.k2Comments ul.k2CommentsList li span.commentToolbar a { font-size: 11px; text-decoration: underline; margin-right: 4px; }
+div.k2Comments ul.k2CommentsList li span.commentToolbar a:hover { font-size: 11px; text-decoration: underline; }
+div.k2Comments ul.k2CommentsList li span.commentToolbarLoading { background: url(../images/system/searchLoader.gif) no-repeat 100% 50%; }
+
+span.lcItemCategory, .lcItemCategory a { display: inline; float: left; }
+/*LatestItems
+---------------------------------------------------*/
+.latestItemsCategory,.itemListCategory { margin-bottom: 60px; }
+.latestItemsCategory img { float: left; margin-right: 20px; }
+
+/*K2 Tag View
+---------------------------------------------------*/
+.k2TagView { float: left; width: 94%; margin-bottom: 60px; }
+
+.k2UsersBlock {
+	position: relative;
+}
+
+.ubUserFeedIcon {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
